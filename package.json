@@ -1,10 +1,13 @@
 {
   "name": "6_mobx-react",
   "version": "0.0.0",
+  "homepage": "https://devdemoDD.github.io/mobx-todoapp",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "mobx": "^6.3.12",
@@ -14,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "gh-pages": "^5.0.0",
     "vite": "^2.7.2"
   }
 }
